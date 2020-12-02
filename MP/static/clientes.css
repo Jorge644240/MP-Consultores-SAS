@@ -1,0 +1,75 @@
+td
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+}
+h2
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+h3
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+p
+{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 650;
+    font-size: 14px;
+    text-align: center;
+}
+p b
+{
+    font-weight: 750;
+}
+h1 + p
+{
+    margin: 10px auto;
+    width: 70%;
+}
+.clients
+{
+    background-color: white;
+}
+.logo
+{
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+}
+.right
+{
+    padding: 10px;
+}
+#top
+{
+    height: 50vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px)
+{
+    .logo, .right
+    {
+        width: 50%;
+    }
+    td h2
+    {
+        display: none;
+    }
+}

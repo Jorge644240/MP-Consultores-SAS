@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block description_tag %}
+    <meta name="description" content="MP Consultores SAS - Nuestros Productos">
+{% endblock %}
+
+{% block title %}Productos{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href={{ url_for("static", filename="productos.css") }}>
+{% endblock %}
+
+{% block body %}
+    <h1>Nuestros Productos</h1>
+    <p style="text-align: center; margin: 0 auto 15px auto; width: 90%;"><b>En MP Consultores brindamos diferentes productos de acuerdo a las necesidades de su compañia: desde las normas NIIF y su implementación en su empresa hasta la creación de desarrollos a la medida de acuerdo a las necesidades de software propias de cada negocio.</b></p>
+
+    <div class="tab" id="xbrl">
+        <div class="text">
+            <h3>XBRL</h3>
+            <p>XBRL utiliza el lenguaje XML como el lenguaje base de desarrollo, diseñado para cumplir con las exigencias de información financiera y empresarial, lo que le permitió convertirse en un estándar para el intercambio y descripción de tal información para todo negocio.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #000000;" class="info">
+        <a href="xbrl.html" class="link"><p>Si lo que busca es un sistema contable que le permita mantenerse a la vanguardia dentro de los sectores financiero y empresarial, la implementación XBRL es el producto que se ajusta perfectamente a las necesidades de su negocio.</p></a>
+    </div>
+
+    <div class="tab" id="sap">
+        <div class="text">
+            <h3>SAP</h3>
+            <p>SAP es el mejor ERP actualmente del mercado, integrado con las soluciones más completas como herramientas de automatización de procesos y gestión de documentos, además de permitir la implementación de varios módulos financieros utiles para su negocio (FI, TRM, entre otros).</p>
+        </div>
+    </div>
+
+    <div style="background-color: #003300;" class="info">
+        <a href="sap.html" class="link"><p>Si lo que busca es una mejor gestión de toda su información financiera y los procesos de sus finanzas, la implementación SAP es el producto ideal para su negocio.</p></a>
+    </div>
+
+    <div class="tab" id="niif">
+        <div class="text">
+            <h3>NIIF/IFRS</h3>
+            <p>Las NIIF permiten hacer un diagnóstico sobre el sistema de información responsable de la información financiera de su negocio, basado en el diagnóstico realizado tras un proceso de consultoría contable. Las NIIF permiten acceder a información relevante de todos los procesos financieros de su empresa, y a una representación fiel de sus datos financieros.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #000033" class="info">
+        <a href="niif.html" class="link"><p>Si lo que busca es manejar con mayor agilidad y eficacia todos lo procesos y datos financieros de su negocio, la implementación de las Normas Internacionales de Información Financiera NIIF es el producto perfecto.</p></a>
+    </div>
+
+    <div class="tab" id="automatizacion">
+        <div class="text">
+            <h3>Automatización de Procesos</h3>
+            <p>La automatización de procesos dentro de su negocio le permitirá aumentar la eficacia con la que sus empleados realizan cada una de sus tareas y permite la transferencia de información dentro de su empresa de forma que se reducen los tiempos y se aumenta la efectividad de los procesos internos de su compañia.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #333333;" class="info">
+        <a href="auto.html" class="link"><p>Si lo que busca es agilizar los procesos internos de su compañia y aumentar sus posibilidades de negocio, la automatización de procesos es el producto que le permitirá lograr sus metas en los negocios.</p></a>
+    </div>
+
+    <div class="tab" id="dev">
+        <div class="text">
+            <h3>Desarrollos a la medida</h3>
+            <p>Los desarrollos a la medida le permitirán expandir su negocio en la medida que usted desee al realizar un diagnóstico de las necesidades de desarrollo y mejora de cada negocio enfocandose en la optimización del proceso y la automatización del mismo.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #330000" class="info">
+        <a href="dev.html" class="link"><p>Si lo que busca es un desarrollo e implementación de software especial y que se acomode a lo que usted desea implementar en su negocio, los desarrollos a la medida son el producto que esta buscando.</p></a>
+    </div>
+
+    <div class="tab" id="web">
+        <div class="text">
+            <h3>Desarrollo Web</h3>
+            <p>La página web es la carta de presentación digital de su empresa ante proveedores y clientes potenciales, por lo que es necesario que sea atractiva y exprese de manera clara el objetivo de la empresa. A traves de la página web de su negocio usted podrá integrar todas las funciones, áreas y departamentos de su empresa de forma ágil y concreta.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #333300" class="info">
+        <a href="web.html" class="link"><p>Si lo que busca es expandir su negocio con presencia digital en la red, el desarrollo web es el producto que necesita.</p></a>
+    </div>
+
+    <div class="tab" id="if">
+        <div class="text">
+            <h3>Sistemas de Información Financiera</h3>
+            <p>Los Sistemas de Información Financiera manejan los Instrumentos Financieros, cuya gestión abarca los préstamos tomados de entidades financieras y otorgadas a terceros, Swaps, derivados, futuros, compra y venta de divisas e inversiones financieras en el sector real y de servicios los cuales realizan estas transacciones y requieren su gestión, calculo, contabilización y valoración.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #003333;" class="info">
+        <a href="if.html" class="link"><p>Si lo que busca es tener una gestión más completa y eficaz de su información financiera, los sistemas de información financiera son el producto perfecto para su negocio.</p></a>
+    </div>
+
+    <div class="tab" id="mov">
+        <div class="text">
+            <h3>Integración de Procesos</h3>
+            <p>La integración de procesos le permitirá integrar todos los sistemas operativos de cualquier dispositivo (sea movil o fijo) de forma transparente, a la vez que aplica herramientas de última tecnología con una relación costo-beneficio favorable y gran rápidez en su implementación.</p>
+        </div>
+    </div>
+
+    <div style="background-color: #330033;" class="info">
+        <a href="mov.html" class="link"><p>Si lo que busca es un fácil acceso a la información de su negocio desde cualquier plataforma, la movilización de procesos es el producto que le ayudara a cumplir sus objetivos.</p></a>
+    </div>
+{% endblock %}

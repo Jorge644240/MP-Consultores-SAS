@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block description_tag %}
+    <meta name="description" content="MP Consultores SAS - Nuestros Clientes">
+{% endblock %}
+
+{% block title %}Nuestros Clientes{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href={{ url_for("static", filename="clientes.css") }}>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+    <div id="top">
+        <h1>Nuestros Clientes</h1>
+        <p style="text-align: center;"><b>A lo largo de los años, en MP Consultores hemos trabajado con varias compañias que comprenden diferentes servicios, utilidades, y sectores económicos, lo que nos brinda confianza en nuestro entendimiento de la industria y respalda la confianza que nuestros clientes ponen en nuestro equipo al escoger nuestros productos y servicios.</b></p>
+    </div>
+
+    <!-- Table with every client that it's been worked with -->
+    <div>
+        <table style="padding: 10px;">
+            <tr class="clients">
+                <td class="logo">
+                    <h2>Universidad Externado de Colombia</h2>
+                    <a href="https://www.uexternado.edu.co/" target="_blank"><img src={{ url_for("static", filename="externado.png") }} alt="Logo de la Universidad Externado de Colombia" title="Unviversidad Externado de Colombia" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la implementación de las normas internacionales de información financiera NIIF plenas.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>Redeban Multicolor</h2>
+                    <a href="https://www.rbmcolombia.com/wps/portal/index" target="_blank"><img src={{ url_for("static", filename="rbm.png") }} alt="Logo de Redeban Multicolor" title="Redeban Multicolor" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la implemetación de XBRL para reportar las normas internacionales de información financiera NIIF plenas a la Superintendencia Financiera de Colombia.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>Enertotal</h2>
+                    <a href="https://www.enertotalesp.com/" target="_blank"><img src={{ url_for("static", filename="enertotal.png") }} alt="Logo de Enertotal S.A. E.S.P." title="Enertotal S.A. E.S.P." style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la optimización de todos los procesos financieros y de tesorería.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>Groupe SEB</h2>
+                    <a href="https://www.groupeseb.com/en" target="_blank"><img src={{ url_for("static", filename="seb.png") }} alt="Logo de Groupe SEB" title="Groupe SEB" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la implementación de las normas internacionales de información financiera NIIF plenas con desarrollos propios para generar notas financieras.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>MiniPak</h2>
+                    <a href="https://www.minipak.com.co/" target="_blank"><img src={{ url_for("static", filename="minipak.png") }} alt="Logo de MiniPak" title="MiniPak" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td  class="right">
+                    <p>Se realizó la implementación de las normas internacionales de información financiera NIIF plenas y optimización de procesos.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>FullerPinto</h2>
+                    <a href="https://fullerpinto.com/" target="_blank"><img src={{ url_for("static", filename="fuller.png") }} alt="Logo de FullerPinto" title="FullerPinto" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la implementación de las normas internacionales de información financiera NIIF plenas y optimización de procesos.</p>
+                </td>
+            </tr>
+            <tr class="clients">
+                <td class="logo">
+                    <h2>Uniban</h2>
+                    <a href="http://www.uniban.com/index.php/es/" target="_blank"><img src={{ url_for("static", filename="uniban.png") }} alt="Logo de Uniban S.A." title="Uniban" style="max-width: 100%; height: auto;"></a>
+                </td>
+                <td class="right">
+                    <p>Se realizó la implementación de las normas internacionales de información financiera NIIF plenas y optimización de procesos.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+
+    </script>
+{% endblock %}

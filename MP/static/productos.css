@@ -1,0 +1,185 @@
+body
+{
+    margin: 0;
+}
+h1
+{
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+h3
+{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.text p
+{
+    font-size: 25px;
+}
+.tab
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    font-family: sans-serif;
+    align-items: center;
+    height: 90vh;
+}
+.info
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    height: auto;
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.link
+{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+#xbrl
+{
+    background-image: url("xbrl.jpg");
+    object-fit: cover;
+}
+#xbrl h3, #xbrl p
+{
+    transition: transform .2s;
+    padding: 20px;
+}
+#niif
+{
+    background-image: url("niif.jpg");
+    object-fit: cover;
+}
+#niif h3, #niif p
+{
+    transition: transform .2s;
+    padding: 20px;
+}
+#sap
+{
+    background-image: url("sap.jpg");
+    object-fit: cover;
+}
+#sap h3, #sap p
+{
+    color: #FFFFFF;
+    transition: transform .2s;
+    padding: 20px;
+}
+#automatizacion
+{
+    background-image: url("auto.jpg");
+    object-fit: cover;
+}
+#automatizacion h3, #automatizacion p
+{
+    transition: transform .2s;
+    color: #FFFFFF;
+    padding: 20px;
+}
+#dev
+{
+    background-image: url("devs.jpg");
+    object-fit: cover;
+}
+#dev h3, #dev p
+{
+    transition: transform .2s;
+    padding: 20px;
+}
+#web
+{
+    background-image: url("web.jpg");
+    object-fit: cover;
+}
+#web h3, #web p
+{
+    transition: transform .2s;
+    color: #FFFFFF;
+    padding: 20px;
+}
+#if
+{
+    background-image: url("if.jpg");
+    object-fit: cover;
+}
+#if h3, #if p
+{
+    transition: transform .2s;
+    padding: 20px;
+}
+#mov
+{
+    background-image: url("mov.jpg");
+    object-fit: cover;
+}
+#mov h3, #mov p
+{
+    transition: transform .2s;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.text
+{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    transition: transform .2s;
+}
+#xbrl .text:hover, #niif .text:hover, #dev .text:hover, #if .text:hover
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.2);
+}
+#sap .text:hover, #automatizacion .text:hover, #web .text:hover, #mov .text:hover
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1000px)
+{
+    .tab
+    {
+        height: auto;
+        min-height: 100vh;
+    }
+    .text
+    {
+        width: 100%;
+    }
+    h3, p
+    {
+        text-align: center;
+    }
+    #xbrl .text:hover, #niif .text:hover, #dev .text:hover, #if .text:hover, #sap .text:hover, #automatizacion .text:hover, #web .text:hover, #mov .text:hover
+    {
+        transform: none;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #xbrl .text, #niif .text, #dev .text, #if .text
+    {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    #sap .text, #automatizacion .text, #web .text, #mov .text
+    {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}

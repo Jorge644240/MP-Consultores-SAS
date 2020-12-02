@@ -1,0 +1,50 @@
+body
+{
+    margin: 0;
+}
+h2
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+h3
+{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+p
+{
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.logo
+{
+    max-height: 30vh;
+    width: auto;
+}
+.tab
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.dark
+{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.light
+{
+    background-color: #FFFFFF;
+}
+.one
+{
+    border-bottom: 1px solid #BBBBBB;
+}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block description_tag %}
+    <meta name="description" content="MP Consultores SAS - Quienes Somos">
+{% endblock %}
+
+{% block title %}Quienes Somos{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href={{ url_for("static", filename="nosotros.css") }}>
+{% endblock %}
+
+{% block body %}
+    <h2>Quienes Somos</h2>
+
+    <h3>Nuestra historia</h3>
+
+    <p>MP Consultores nace con la participación y colaboración de personas con perfiles profesionales y técnicos derivados de su experiencia en la consultoría de implementación de sistemas de información en SAP. Esta experiencia nos permitió conocer las deficiencias existentes en estos procesos al momento de salida en vivo y entender el nicho del mercado al cual deberíamos enfocarnos. </p>
+    <p>Encontramos gran descontento en el área financiera de todos nuestros clientes, especialmente en relación con los requerimientos fiscales en cada país. Aspectos como la aplicación eficiente de retenciones, impuestos, presentación de informes a las entidades regulatorias y, en medida muy importante, la presentación de informes financieros a los entes regulatorios y los altos ejecutivos de las compañías los encontramos por debajo de lo que habíamos anticipado. Por estas razones nos especializamos en el área financiera, aportando todas las soluciones necesarias para cumplir con el día a día en los departamentos financieros.</p>
+
+    <div style="text-align: center;">
+        <a href="https://www.sap.com/latinamerica/index.html" target="_blank"><img src={{ url_for("static", filename="sap.png") }} alt="Logo de Sap" title="SAP Latinoamérica"></a>
+    </div>
+
+    <p>Fundada en 2012, nace la oportunidad de entregarle a nuestros clientes procesos de optimización en sus implementaciones SAP, especialmente en el área financiera (impuestos, localizaciones fiscales en América Latina, y tesorería básica y avanzada; préstamos, derivados, futuros, flujo de caja y transacciones en bolsas de valores) y realizar implementaciones en SAP y otros ERPs con conocimientos en la implementación contable de las <a href="https://niif.com.co/" target="_blank" style="text-decoration: none; color: black;">Normas Internacionales de Información Financiera NIIF.</a></p>
+    <p>Y debido a los avances de la tecnología y los nuevos requerimientos legales, quisimos ser partner de Altova, una suite de herramientas tecnológicas con las cuales podemos darles a nuestros clientes más y mejores soluciones siempre pensando en la optimización del tiempo de cada usuario y aminorar el riesgo de errores en el momento de gestionar la información interna y externa de las compañías.</p>
+
+    <div style="text-align: center;">
+        <a href="https://www.altova.com/es/" target="_blank"><img src={{ url_for("static", filename="altova.png") }} alt="Logo de Altova" title="Altova Español"></a>
+    </div>
+
+    <hr>
+
+    <table style="background-color: #000033; color: #FFFFFF;">
+        <tr>
+            <td>
+                <h3>Nuestra Misión</h3>
+
+                <p>Proveer soluciones tecnológicas a nuestros clientes en las áreas financiera y logística para optimizar los ERPs implementados hoy en cada compañía y cumplir de forma ágil y concreta con los requerimientos de información internos para la toma de decisiones de la manera más acertada posible y el cumplimiento de los requerimientos externos.</p>
+            </td>
+            <td>
+                <h3>Nuestra Visión</h3>
+
+                <p>En cinco años (2020) estar instalados en el mercado colombiano y suramericano como un proveedor de herramientas y servicios en software para la optimización de la información financiera en cualquier compañía, conectando todos los productos ERP y funcionales existentes en el mercado con la última tecnología disponible.</p>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jorge Gallego">
+        <meta name="title" content="MP Consultores SAS">
+        {% block description_tag %} {% endblock %}
+        <meta name="robots" content="NOFOLLOW">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Consulting, IFRS, SAP, Web Development, XBRL">
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href={{ url_for("static", filename="layout.css") }}>
+        <link rel="shortcut icon" type="image/x-icon" href={{ url_for("static", filename="favicon.ico") }}>
+        {% block style %}
+        {% endblock %}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <a href="/"><img src={{ url_for("static", filename="nlogo.jpg") }} alt="MP Consultores SAS" title="MP Consultores SAS" style="max-width: 100%; height: auto; margin: 8px;"></a>
+        </div>
+
+        <hr>
+
+        <!-- Top Menu -->
+        <div class="menu">
+            <div><a href="/nosotros" class="tag">Quienes Somos</a></div>
+            <div><a href="/productos" class="tag">Productos</a></div>
+            <div><a href="/servicios" class="tag">Servicios</a></div>
+            <div><a href="/noticias" class="tag">Noticias y Actualidad</a></div>
+            <div><a href="/blog" class="tag">Blog</a></div>
+            <div><a href="/clientes" class="tag">Nuestros Clientes</a></div>
+            <div><a href="/software" class="tag">ALTOVA</a></div>
+        </div>
+
+        <hr>
+
+        {% block body %}
+        {% endblock %}
+        <!-- Link to top -->
+
+        <div class="footer">
+            <div>Contáctenos</div>
+            <hr>
+            <div>Mario Arturo Gallego Martinez</div>
+            <div><a href="mailto:gerencia@mpconsultores.co">gerencia@mpconsultores.co</a></div>
+            <div>Cel +57 1 313 767 3673</div>
+        </div>
+
+        <p class="copyright">© MP Consultores SAS - 2020</p>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block description_tag %}
+    <meta name="description" content="MP Consultores SAS - Servicios">
+{% endblock %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href={{ url_for("static", filename="servicios.css") }}>
+{% endblock %}
+
+{% block body %}
+    <h2>Nuestros Servicios</h2>
+    <p style="text-align: center;"><b>En MP Consultores brindamos diferentes productos de acuerdo a las necesidades de su compañia: desde las normas NIIF y su implementación en su empresa hasta la creación de desarrollos a la medida de acuerdo a las necesidades de software propias de cada negocio.</b></p>
+
+    <div class="tab" id="estructuracion">
+        <div class="text">
+            <h3>Estructuración de Procesos</h3>
+            <p>Muchos proyectos fracasan antes de empezar a causa de la falta de planeación de los mismos dentro de las organizaciones y los negocios. Por eso, es necesario tener claros el propósito, alcance, recursos y mecanismos de gestión a utlizar para alcanzar los objetivos definidos.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="automatizacion">
+        <div class="text">
+            <h3>Automatización PMO en SharePoint</h3>
+            <p>RSM está en la capacidad de automatizar la gestión de proyectos, soportandose en herramientas tecnológicas reconocidas como SharePoint. Mediante la automatización de los procesos de Gestión de Proyectos las empresas logran alcanzar altos porcentajes de éxito en sus iniciativas estratégicas.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="estrategia">
+        <div class="text">
+            <h3>Estrategia Corporativa</h3>
+            <p>En RSM contamos con la experiencia, herramientas y metodología que le permiten a las organizaciones realizar una correcta definición del direccionamiento estratégico y sobretodo una correcta implementación.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="mcgp">
+        <div class="text">
+            <h3>Modelo Corporativo de Gestión de Proyectos</h3>
+            <p>RSM apoya a las organizaciones definiendo e implementando de un modelo corporativo de gestión de proyectos que comprende procesos, procedimientos, formatos e indicadores que ayudan a formalizar la gestión dentro de la empresa y homogeniza los pasos a seguir para cada proyecto que se emprenda.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="auditoria">
+        <div class="text">
+            <h3>Auditoría y Aseguramiento</h3>
+            <p>Auditoría financiera y Revisión fiscal, Auditoría de Licenciamiento, Valor para los negocios, Implicaciones Legales y Fiscales, Metodología, Auditoría de Cumplimiento, Interventoría financiera, contable y DueDillegence, Procedimientos previamente acordados, Cumplimiento Corporativo y Auditoría Ambiental.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="evaluacion">
+        <div class="text">
+            <h3>Evaluación y Auditoría para la Estrategia</h3>
+            <p>La metodología de RSM identifica cómo el liderazgo, la gestión, los sistemas y las prácticas están alimentando la ejecución de la estrategia y como estan alineados con los objetivos a largo plazo.</p>
+        </div>
+    </div>
+
+    <div class="tab" id="gestion">
+        <div class="text">
+            <h3>Gestión de Proyectos</h3>
+            <p>Integración de herramientas de desarrollo con fuentes de información de distinto tipo: bases de datos, Excel, Word, archivos planos, EDI y cualquier tipo de información almacenada</p>
+        </div>
+    </div>
+
+    <div class="tab" id="peti">
+        <div class="text">
+            <h3>PETI - Planeación Estratégica de Tecnología Informática</h3>
+            <p>Las TIC necesitan una estrategia de cnstrucción planificada para satisfacer los requerimientos corporativos a corto, mediano y largo plazo.</p>
+        </div>
+    </div>
+{% endblock %}

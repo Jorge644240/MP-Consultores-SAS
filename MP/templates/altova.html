@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}Software Altova{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href={{ url_for("static", filename="altova.css") }}>
+{% endblock %}
+
+{% block body %}
+    <h2>Software Altova</h2>
+    <p style="text-align: center;"><b>Somos partner de Altova, por lo que varios de nuestros productos se desarrollan con los distintos programas y software que Altova brinda y que respaldan componentes base de algunas de las soluciones que ofrecemos a nuestros clientes, como lo son XML, HTML y bases de datos como MySQL.</b></p>
+
+    <div class="tab dark">
+        <div><h3>Altova Diffdog</h3></div>
+        <div><a href="https://www.altova.com/es/diffdog" target="_blank"><img src={{ url_for("static", filename="diffdog.jpg") }} alt="Logo de Altova Diffdog" title="Altova Diffdog" class="logo"></a></div>
+        <div><p>Permite el seguimiento al desarrollo de documentos cuando se realizan proyectos complejos donde se deben tener versiones de documentos en forma controlada.</p></div>
+    </div>
+
+    <div class="tab light one">
+        <div><h3>Altova UModel</h3></div>
+        <div><a href="https://www.altova.com/es/umodel" target="_blank"><img src={{ url_for("static", filename="umodel.jpg") }} alt="Logo de Altova UModel" title="Altova UModel" class="logo"></a></div>
+        <div><p>Modelación de flujos de procesos, flujo de negocios, flujo de operaciones, diseño de bases de datos, diseño de operaciones, aplicación de flujo a proyectos de desarrollo de software y todos los flujos existentes para diagramar.</p></div>
+    </div>
+
+    <div class="tab light">
+        <div><h3>Altova StyleVision</h3></div>
+        <div><a href="https://www.altova.com/es/stylevision" target="_blank"><img src={{ url_for("static", filename="stylevision.jpg") }} alt="Logo de Altova StyleVision" title="Altova StyleVision" class="logo"></a></div>
+        <div><p>Permite diseñar informes gráficos modernos y ágiles de cambiar por el usuario conectado a distintas fuentes de información aplicable a reportes XML, XBRL, Excel, Word, PDF, etc.</p></div>
+    </div>
+
+    <div class="tab dark">
+        <div><h3>Altova XMLSpy</h3></div>
+        <div><a href="https://www.altova.com/es/xmlspy" target="_blank"><img src={{ url_for("static", filename="xmlspy.jpg") }} alt="Logo de Altova XMLSpy" title="Altova XMLSpy" class="logo"></a></div>
+        <div><p>Herramienta que permite el desarrollo y gestión en HTML, XML, WSBL, XBRL, HTML5, CSS3, JavaScript y cualquier herramienta de desarrollo en Internet de forma fácil, amena y estructurada.</p></div>
+    </div>
+
+    <div class="tab light one">
+        <div><h3>Altova DatabaseSpy</h3></div>
+        <div><a href="https://www.altova.com/es/databasespy" target="_blank"><img src={{ url_for("static", filename="databasespy.jpg") }} alt="Logo de Altova DatabaseSpy" title="Altova DatabaseSpy" class="logo"></a></div>
+        <div><p>Administrador de bases de datos de alto desempeño con aplicación de Big Data y conexión con cualquier tipo de bases de datos: Oracle, MySQL, PostgreSQL, Access, entre otras.</p></div>
+    </div>
+
+    <div class="tab light">
+        <div><h3>Altova MapForce</h3></div>
+        <div><a href="https://www.altova.com/es/mapforce" target="_blank"><img src={{ url_for("static", filename="mapforce.jpg") }} alt="Logo de Altova MapForce" title="Altova MapForce" class="logo"></a></div>
+        <div><p>Integración de las herramientas de desarrollo con fuentes de información de distinto tipo: bases de datos, Excel, Word, archivos planos, EDI y cualquier tipo de información almacenada.</p></div>
+    </div>
+
+    <div class="tab dark">
+        <div><h3>Altova MobileTogether</h3></div>
+        <div><a href="https://www.altova.com/es/mobiletogether" target="_blank"><img src={{ url_for("static", filename="mobiletogether.jpg") }} alt="Logo de Altova MobileTogether" title="Altova MobileTogether" class="logo"></a></div>
+        <div><p>El más ágil, fácil y rápido creador de herramientas para uso en dispositivos móviles indistintamente de su tipo, marca, tamaño y/o tecnología. Aplica video, sonido y el manejo de cualquier conexión con bases de datos y otras aplicaciones.</p></div>
+    </div>
+{% endblock %}

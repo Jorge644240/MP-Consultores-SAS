@@ -1,0 +1,162 @@
+.row
+{
+    padding: 10px;
+}
+td
+{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+h1
+{
+    text-align: center;
+}
+h2
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+h3
+{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+div p
+{
+    font-size: 25px;
+}
+.tab
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    font-family: sans-serif;
+    align-items: center;
+    height: 100vh;
+}
+#estructuracion
+{
+    background-image: url("estructuracion.jpg");
+    object-fit: cover;
+}
+#automatizacion
+{
+    background-image: url("automatizacion.jpg");
+    object-fit: cover;
+}
+#automatizacion h3, #automatizacion p
+{
+    color: #FFFFFF;
+}
+#mcgp
+{
+    background-image: url("mcgp.jpg");
+    object-fit: cover;
+}
+#mcgp h3, #mcgp p
+{
+    color: #FFFFFF;
+}
+#estrategia
+{
+    background-image: url("estrategia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+#gestion
+{
+    background-image: url("gestion.jpg");
+    object-fit: cover;
+}
+#auditoria
+{
+    background-image: url("auditoria.jpg");
+    object-fit: cover;
+}
+#evaluacion
+{
+    background-image: url("evaluacion.jpg");
+    object-fit: cover;
+    background-size: cover;
+}
+#evaluacion h3, #evaluacion p
+{
+    color: #FFFFFF;
+}
+#peti
+{
+    background-image: url("peti.jpg");
+    object-fit: cover;
+}
+#peti h3, #peti p
+{
+    color: #FFFFFF;
+}
+.text
+{
+    padding: 20px;
+    width: 40%;
+    transition: transform .2s;
+    margin: 0 auto;
+    text-align: center;
+}
+p b
+{
+    margin: 8px;
+}
+#estructuracion .text:hover, #estrategia .text:hover, #auditoria .text:hover, #gestion .text:hover
+{
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#automatizacion .text:hover, #mcgp .text:hover, #evaluacion .text:hover, #peti .text:hover
+{
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*@media screen and (max-width: 800px)
+{
+    #evaluacion
+    {
+        background-image: url("evaluacion (1).jpg");
+    }
+}*/
+@media screen and (max-width: 1000px)
+{
+    .text
+    {
+        width: 100%;
+    }
+    h3, p
+    {
+        text-align: center;
+    }
+    .tab
+    {
+        min-height: 100vh;
+        height: auto;
+    }
+    #estructuracion .text:hover, #estrategia .text:hover, #auditoria .text:hover, #gestion .text:hover, #automatizacion .text:hover, #mcgp .text:hover, #evaluacion .text:hover, #peti .text:hover
+    {
+        transform: none;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #estructuracion .text, #estrategia .text, #auditoria .text, #gestion .text
+    {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    #automatizacion .text, #mcgp .text, #evaluacion .text, #peti .text
+    {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
